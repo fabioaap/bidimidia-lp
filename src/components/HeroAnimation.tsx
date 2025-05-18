@@ -37,16 +37,16 @@ export const HeroAnimation = () => {
   }, []);
   
   return (
-    <div className="relative w-[616px] h-[616px] max-w-full">
+    <div className="relative w-[616px] h-[616px] max-w-full overflow-hidden">
       <svg width="100%" height="100%" viewBox="0 0 617 617" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-full">
-        {/* Outer circles with pulse animation */}
+        {/* Outer circles with sequential ripple animation */}
         <circle 
           cx="308.816" 
           cy="308.479" 
           r="308" 
           fill="white" 
           fillOpacity="0.2"
-          className="animate-[pulse_4s_ease-in-out_infinite]"
+          className="animate-[ripple_4s_ease-in-out_infinite]"
         />
         <circle 
           cx="308.818" 
@@ -54,7 +54,7 @@ export const HeroAnimation = () => {
           r="253.465" 
           fill="white" 
           fillOpacity="0.2"
-          className="animate-[pulse_3.5s_ease-in-out_infinite]"
+          className="animate-[ripple_4s_ease-in-out_infinite_0.5s]"
         />
         <ellipse 
           cx="308.816" 
@@ -64,7 +64,7 @@ export const HeroAnimation = () => {
           transform="rotate(0.0293449 308.816 308.479)" 
           fill="white" 
           fillOpacity="0.2"
-          className="animate-[pulse_3s_ease-in-out_infinite]"
+          className="animate-[ripple_4s_ease-in-out_infinite_1s]"
         />
         <circle 
           cx="308.817" 
@@ -72,7 +72,7 @@ export const HeroAnimation = () => {
           r="136.45" 
           fill="white" 
           fillOpacity="0.2"
-          className="animate-[pulse_2.5s_ease-in-out_infinite]"
+          className="animate-[ripple_4s_ease-in-out_infinite_1.5s]"
         />
         
         {/* Compass element that will rotate */}

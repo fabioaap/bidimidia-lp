@@ -95,12 +95,27 @@ export default {
 						opacity: '0.4',
 						transform: 'scale(1.03)'
 					}
+				},
+				'ripple': {
+					'0%': { 
+						opacity: '0.1',
+						transform: 'scale(0.95)'
+					},
+					'50%': { 
+						opacity: '0.3',
+						transform: 'scale(1.02)'
+					},
+					'100%': { 
+						opacity: '0.1',
+						transform: 'scale(0.95)'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out',
-				'pulse': 'pulse 2s infinite'
+				'pulse': 'pulse 2s infinite',
+				'ripple': 'ripple 4s infinite'
 			}
 		}
 	},
