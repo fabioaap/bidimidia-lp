@@ -1,3 +1,4 @@
+
 import React from 'react';
 
 const niches = [
@@ -17,7 +18,7 @@ const niches = [
 
 export const Niches = () => {
   return (
-    <section className="items-stretch flex w-full flex-col overflow-hidden justify-center bg-white px-16 py-28 max-md:max-w-full max-md:px-5 max-md:py-[100px]">
+    <section id="niches" className="items-stretch flex w-full flex-col overflow-hidden justify-center bg-white px-16 py-28 max-md:max-w-full max-md:px-5 max-md:py-[100px]">
       <div className="flex w-full flex-col items-center px-16 py-[120px] max-md:max-w-full max-md:px-5 max-md:py-[100px]">
         <div className="w-[768px] max-w-full text-black text-center">
           <h2 className="text-black text-5xl font-bold leading-[1.2] max-md:max-w-full max-md:text-[40px]">

@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 
@@ -14,15 +15,15 @@ export const Navbar = () => {
         </Link>
         <div className="justify-center items-center self-stretch flex min-w-60 gap-8 bg-white my-auto">
           <div className="self-stretch flex min-w-60 gap-8 overflow-hidden my-auto">
-            <Link to="#services" className="text-black hover:text-gray-600 transition-colors">
+            <a href="#how-we-help" className="text-black hover:text-gray-600 transition-colors">
               Como te ajudamos
-            </Link>
-            <Link to="#services" className="text-black hover:text-gray-600 transition-colors">
+            </a>
+            <a href="#services" className="text-black hover:text-gray-600 transition-colors">
               Serviços
-            </Link>
-            <Link to="#niches" className="text-black hover:text-gray-600 transition-colors">
+            </a>
+            <a href="#niches" className="text-black hover:text-gray-600 transition-colors">
               Nichos
-            </Link>
+            </a>
           </div>
         </div>
       </div>

@@ -1,3 +1,4 @@
+
 import React from 'react';
 
 const services = [
@@ -35,7 +36,7 @@ const services = [
 
 export const Services = () => {
   return (
-    <section className="items-stretch flex w-full flex-col overflow-hidden justify-center bg-white px-16 py-28 max-md:max-w-full max-md:px-5 max-md:py-[100px]">
+    <section id="services" className="items-stretch flex w-full flex-col overflow-hidden justify-center bg-white px-16 py-28 max-md:max-w-full max-md:px-5 max-md:py-[100px]">
       <div className="items-stretch flex w-full flex-col bg-gray-50 px-16 py-[120px] rounded-3xl max-md:max-w-full max-md:px-5 max-md:py-[100px]">
         <div className="self-center w-[768px] max-w-full text-center">
           <h2 className="text-black text-5xl font-bold leading-[1.2] max-md:max-w-full max-md:text-[40px]">
