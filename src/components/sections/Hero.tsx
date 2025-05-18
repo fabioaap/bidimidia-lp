@@ -1,4 +1,6 @@
+
 import React from 'react';
+import { HeroAnimation } from '@/components/HeroAnimation';
 
 export const Hero = () => {
   return (
@@ -37,11 +39,7 @@ export const Hero = () => {
           </button>
         </div>
       </div>
-      <img
-        src="https://cdn.builder.io/api/v1/image/assets/TEMP/44e11030e1fe7884683c95df0414b9c5f25aa6df?placeholderIfAbsent=true"
-        alt="Hero Image"
-        className="aspect-[1] object-contain w-[616px] self-stretch min-w-60 my-auto max-md:max-w-full"
-      />
+      <HeroAnimation />
     </section>
   );
 };
