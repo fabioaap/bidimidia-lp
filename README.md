@@ -62,7 +62,30 @@ This project is built with:
 
 ## How can I deploy this project?
 
+### Deploying with Lovable
+
 Simply open [Lovable](https://lovable.dev/projects/76d44630-29c1-4d1e-8f71-0e0751f9531c) and click on Share -> Publish.
+
+### Deploying manually to GitHub Pages
+
+If you prefer to publish the site yourself using GitHub Pages, follow the steps below:
+
+1. **Instale as dependências** (caso ainda não tenha feito):
+   ```sh
+   npm install
+   ```
+2. **Gere os arquivos estáticos** usando a configuração de `base` já presente em `vite.config.ts`:
+   ```sh
+   npm run build
+   ```
+   O comando criará a pasta `dist/` com os assets apontando para o subcaminho `/bidimidia-lp/`.
+3. **Envie o conteúdo de `dist/` para a branch publicada pelo GitHub Pages**. Existem duas abordagens comuns:
+   - **Branch `gh-pages`**: inicialize (ou atualize) uma branch separada com o conteúdo da pasta `dist/` e faça push para `origin gh-pages`.
+   - **Pasta `/docs` na branch principal**: copie o conteúdo de `dist/` para uma pasta `docs/` rastreada pelo Git e faça o commit na branch configurada no GitHub Pages.
+4. **Atualize a configuração do GitHub Pages** no repositório, certificando-se de que a branch/pasta escolhida no passo anterior esteja selecionada em *Settings ▸ Pages*.
+5. Aguarde alguns minutos para o GitHub processar a publicação e acesse `https://<seu-usuario>.github.io/bidimidia-lp/` para validar.
+
+> Dica: ao testar localmente com `npm run dev`, você pode passar a variável `--host` (por exemplo `npm run dev -- --host`) para acessar o preview em outros dispositivos na mesma rede.
 
 ## Can I connect a custom domain to my Lovable project?
 
